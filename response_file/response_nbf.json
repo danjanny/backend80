@@ -1,0 +1,94 @@
+{
+    "title": "Firebase\\JWT\\BeforeValidException",
+    "type": "Firebase\\JWT\\BeforeValidException",
+    "code": 500,
+    "message": "Cannot handle token prior to 2021-10-19T22:27:03-0500",
+    "file": "D:\\xampp80\\htdocs\\backend80\\app\\vendor\\firebase\\php-jwt\\src\\JWT.php",
+    "line": 133,
+    "trace": [
+        {
+            "file": "D:\\xampp80\\htdocs\\backend80\\app\\Modules\\Auth\\Controllers\\AuthController.php",
+            "line": 26,
+            "function": "decode",
+            "class": "Firebase\\JWT\\JWT",
+            "type": "::",
+            "args": [
+                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUaGVfaXNzdWVyIiwiYXVkIjoiVGhlX0F1ZCIsImlhdCI6MTYzNDcwMDQxMywibmJmIjoxNjM0NzAwNDIzLCJleHAiOjE2MzQ3MDA0NzMsImRhdGEiOnsiaWQiOiIxIiwidXNlcm5hbWUiOiJqZW5pdDEyMyIsImVtYWlsIjoibWVzei56ZW5pdGhAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMnkkMTAkSEFPMWQ1eklsTUlMRVl4Q090VnA3LkJIdlFZVGlUdDFnbmQuaTV3OVdsWlVvMkROY0Z3dm0iLCJmdWxsX25tIjoiTWVzemllc2hhbiBaZW5pdHNoYW4iLCJpbWFnZSI6Implbml0LTEyMy5qcGciLCJ2ZXJpZl9jb2RlIjoiOTM2MSIsInRnbCI6IjIwMjEtMTAtMTkiLCJjcmVhdGVkX2F0IjoiMjAyMS0xMC0xOSAwNTo1ODozMiIsIm1vZGlmaWVkX2F0IjoiMjAyMS0xMC0xOSAwNTo1ODozMiIsImlzX3ZlcmlmaWVkIjoiMSIsImlzX2RlbGV0ZWQiOiIwIn19.Spwrw23FZPITkRMLs2TiNpJ_dnrxKE3OLz3sk_b_k98",
+                "backend80-key",
+                [
+                    "HS256"
+                ]
+            ]
+        },
+        {
+            "file": "D:\\xampp80\\htdocs\\backend80\\system\\CodeIgniter.php",
+            "line": 802,
+            "function": "detail",
+            "class": "Modules\\Auth\\Controllers\\AuthController",
+            "type": "->",
+            "args": []
+        },
+        {
+            "file": "D:\\xampp80\\htdocs\\backend80\\system\\CodeIgniter.php",
+            "line": 399,
+            "function": "runController",
+            "class": "CodeIgniter\\CodeIgniter",
+            "type": "->",
+            "args": [
+                {}
+            ]
+        },
+        {
+            "file": "D:\\xampp80\\htdocs\\backend80\\system\\CodeIgniter.php",
+            "line": 317,
+            "function": "handleRequest",
+            "class": "CodeIgniter\\CodeIgniter",
+            "type": "->",
+            "args": [
+                null,
+                {
+                    "handler": "file",
+                    "backupHandler": "dummy",
+                    "storePath": "D:\\xampp80\\htdocs\\backend80\\writable\\cache/",
+                    "cacheQueryString": false,
+                    "prefix": "",
+                    "ttl": 60,
+                    "file": {
+                        "storePath": "D:\\xampp80\\htdocs\\backend80\\writable\\cache/",
+                        "mode": 416
+                    },
+                    "memcached": {
+                        "host": "127.0.0.1",
+                        "port": 11211,
+                        "weight": 1,
+                        "raw": false
+                    },
+                    "redis": {
+                        "host": "127.0.0.1",
+                        "password": null,
+                        "port": 6379,
+                        "timeout": 0,
+                        "database": 0
+                    },
+                    "validHandlers": {
+                        "dummy": "CodeIgniter\\Cache\\Handlers\\DummyHandler",
+                        "file": "CodeIgniter\\Cache\\Handlers\\FileHandler",
+                        "memcached": "CodeIgniter\\Cache\\Handlers\\MemcachedHandler",
+                        "predis": "CodeIgniter\\Cache\\Handlers\\PredisHandler",
+                        "redis": "CodeIgniter\\Cache\\Handlers\\RedisHandler",
+                        "wincache": "CodeIgniter\\Cache\\Handlers\\WincacheHandler"
+                    }
+                },
+                false
+            ]
+        },
+        {
+            "file": "D:\\xampp80\\htdocs\\backend80\\public\\index.php",
+            "line": 37,
+            "function": "run",
+            "class": "CodeIgniter\\CodeIgniter",
+            "type": "->",
+            "args": []
+        }
+    ]
+}

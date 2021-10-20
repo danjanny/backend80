@@ -3,9 +3,15 @@
 namespace Modules\Student\Controllers;
 
 use App\Controllers\BaseController;
+use Modules\Student\Seeders\UserSeeder;
+use Modules\Student\Models\UserModel;
 
 class StudentController extends BaseController
 {
+
+	public function __construct() {
+	}
+
 	public function index()
 	{
 		// echo "This is simple from Student Module";
@@ -19,4 +25,9 @@ class StudentController extends BaseController
 	{
 		echo "This is other method from Student Module";
 	}
+
+    public function seed()
+	{
+		echo UserModel::getUser();
+	}	
 }

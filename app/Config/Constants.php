@@ -23,7 +23,7 @@ defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
  | The path that Composer's autoload file is expected to live. By default,
  | the vendor folder is in the Root directory, but you can customize that here.
  */
-defined('COMPOSER_PATH') || define('COMPOSER_PATH', ROOTPATH . 'vendor/autoload.php');
+defined('COMPOSER_PATH') || define('COMPOSER_PATH', APPPATH . 'vendor/autoload.php');
 
 /*
  |--------------------------------------------------------------------------
@@ -77,3 +77,20 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+// SERVER KEY FOR JWT
+defined('SERVER_KEY') || define('SERVER_KEY', 'backend80-key');
+
+
+// VERIFICATION EMAIL
+define('VERIFICATION_EMAIL_HOST', 'smtp.gmail.com');
+define('VERIFICATION_EMAIL_SMTP_SECURE', 'ssl');
+define('VERIFICATION_EMAIL_SMTP_AUTH', true);
+define('VERIFICATION_EMAIL_SMTP_PORT', 465);
+
+define('VERIFICATION_EMAIL_USERNAME', 'test.adeenio@gmail.com');
+define('VERIFICATION_EMAIL_PASSWORD', 'Hustle1991*');
+
+define('VERIFICATION_EMAIL_FROM', 'test.adeenio@gmail.com');
+define('VERIFICATION_EMAIL_FROM_NAME', 'Komunigrafik');
